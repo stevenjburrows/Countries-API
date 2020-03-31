@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+  
+
+    <div id="app">
+        <h1>Total population is {{totalPopulation}}</h1>
+        <div v-for="country in countries">
+           <p>{{country.name}}, {{country.population}}</p>
+
+        </div>
+
+    </div>
     
 </body>
 </html>

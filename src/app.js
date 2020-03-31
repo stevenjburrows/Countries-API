@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             totalPopulation: function() {
                 return this.countries.reduce((runningTotal, country) => runningTotal + country.population, 0);
               },
+              filteredCountry: function(){
+                    return this.countries.filter ((counrty) => {
+                      return country.name === this.selectedCounrty
+                    })
+                  }
+              
 
         },
 

@@ -11,11 +11,22 @@
 
     <div id="app">
         <h1>Total population is {{totalPopulation}}</h1>
-        <div v-for="country in countries">
+
+
+
+            <select name="test" id="test">
+                values = country.name
+                <option value="values" v-for="country in countries" v-model="selectedCountry">{{country.name}}</option>
+            </select>
+
+
+        <div v-for="country in filteredCountry">
+            
            <p>{{country.name}}, {{country.population}}</p>
 
         </div>
-
+  
+        
     </div>
     
 </body>
